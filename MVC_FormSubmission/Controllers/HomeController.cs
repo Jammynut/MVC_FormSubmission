@@ -25,11 +25,16 @@ namespace MVC_FormSubmission.Controllers
         [HttpPost]
         public IActionResult Index(PersonModel person)
         {
+
+            // Does the commented out code below need to be here? Does it need to be within a new object of the class to view the data?
+
+            /* 
             string firstName = person.FirstName;
             string lastName = person.LastName;
             string emailAddress = person.Email;
             string phoneNumber = person.Phone;
             string address = person.Address;
+            */
 
             return View("Success");
 
